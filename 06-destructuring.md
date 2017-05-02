@@ -1,6 +1,5 @@
 # Destructuring
 
-
 1. Using destructuring, write a function that swaps
   its two input parameters without using a temporary
   variable. Test it.
@@ -21,13 +20,13 @@
 
 4. Given this array:
 
-        let arr1 = ['one', 'two', ['three', ['four', ['five', 'six', 'seven']], 'eight']];
+        let arr2 = ['one', 'two', ['three', ['four', ['five', 'six', 'seven']], 'eight']];
 
    Create a destructuring pattern to give this result:
 
         console.log(m, n, o);       // two six eight
 
-5. Given this object:
+5. Assume you have this object:
 
         let stats = {
         	packetForwarded: 5345,

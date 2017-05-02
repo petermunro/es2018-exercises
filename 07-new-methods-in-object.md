@@ -2,7 +2,7 @@
 
 1. In React, a component's state currently looks like this:
 
-      let state = { isVisible: true }
+          let state = { isVisible: true }
 
    Use `Object.assign()` to create a new state object which also contains the property `expertMode` which is currently `false`.
 

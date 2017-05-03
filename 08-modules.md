@@ -9,13 +9,13 @@ Module 8 needs `create-react-app`.
 
 #### 1. Install node
 
-	**Mac**: I use nvm as we don't need to be root, and we can manage multiple node versions.
+**Mac**: I use nvm as we don't need to be root, and we can manage multiple node versions.
 
 	1. Install nvm from https://github.com/creationix/nvm
 	2. Run `nvm install 7.9`
 			// To list available versions: `nvm ls-remote`
 
-	**WIN**: Install node from https://nodejs.org/
+**WIN**: Install node from https://nodejs.org/
 
 #### 2. Install create-react-app
 

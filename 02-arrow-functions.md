@@ -28,4 +28,4 @@
 5. Given the array `[1, 2, 3, 4, 5, 6]`, use the Array `map()` function
    with an arrow function to generate the squares of the elements:
 
-        console.log(squares);         // [1, 4, 9, 16, 25]
+        console.log(squares);         // [1, 4, 9, 16, 25, 36]

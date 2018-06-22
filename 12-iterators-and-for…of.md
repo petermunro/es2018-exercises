@@ -28,7 +28,7 @@ You've already used the `for...of` loop to consume iterables.
 Investigate some other ways:
 
 - Destructuring using an Array pattern
-- `Array.from()``
+- `Array.from()`
 - The spread operator
 - Constructors of Maps and Sets
 

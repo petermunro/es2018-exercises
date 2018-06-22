@@ -23,7 +23,7 @@
 
 Now to create code that consumes this promise.
 
-1. Create a `var` that is assigned the return value from `delay5()`.
+1. Create a variable (eg `let`) that is assigned the return value from `delay5()`.
    What is a good name for this variable?
 
 1. With your variable (which will be the promise),

@@ -19,7 +19,7 @@
     1. A `String`, eg `"abcd"`.
     2. A `Set`.
     3. A `Map`. What value is returned by the iterator each time?
-    4. A `TypedArray`.
+    4. A TypedArray. Try creating a new `Int8Array`.
     5. Are plain objects iterable?
 
 ## Consuming _iterables_
@@ -39,10 +39,10 @@ Investigate some other ways:
 
     ```
     let it = makeIntIterator(4);    // count of 4
-    it.next();                      // {value: 0, done: true}
-    it.next();                      // {value: 1, done: true}
-    it.next();                      // {value: 2, done: true}
-    it.next();                      // {value: 3, done: false}
+    it.next();                      // {value: 0, done: false}
+    it.next();                      // {value: 1, done: false}
+    it.next();                      // {value: 2, done: false}
+    it.next();                      // {value: 3, done: true}
     ```
 
 ## Creating your own _iterable_

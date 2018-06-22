@@ -1,16 +1,12 @@
 # Destructuring
 
-1. Using destructuring, write a function that swaps
-  its two input parameters without using a temporary
-  variable. Test it.
-
-2. Given this array:
+1. Given this array:
 
         let arr1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'];
 
    Using a single destructuring assignment, assign to three variables, `a`, `b` and `c` so that `a` contains `one`, `b` contains `two`, and `c` contains all of the remaining parameters as an array.
 
-3. What does is the value of `p3` here?
+2. What does is the value of `p3` here?
 
         let phonetic = ['sierra', 'charlie'];
         let [p1, p2, p3] = phonetic;
@@ -18,7 +14,7 @@
    How do you think you could _default_ `p3` to a suitable value?
    Try it.
 
-4. Given this array:
+3. Given this array:
 
         let arr2 = ['one', 'two', ['three', ['four', ['five', 'six', 'seven']], 'eight']];
 
@@ -26,7 +22,7 @@
 
         console.log(m, n, o);       // two six eight
 
-5. Assume you have this object:
+4. Assume you have this object:
 
         let stats = {
         	packetForwarded: 5345,
@@ -44,9 +40,9 @@
 
            { forwardCacheHit: myhits, forwardCacheMiss: mymisses } = stats;
 
-6. Can you destructure a string? Try it.
+5. Can you destructure a string? Try it.
 
-7. These contrived functions connect to a server and extract
+6. These contrived functions connect to a server and extract
    data from a 'config' object:
 
        function connectTo(host, port) {

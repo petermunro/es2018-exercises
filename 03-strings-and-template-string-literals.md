@@ -11,7 +11,7 @@
 
    You can use this function to help out:
 
-        function escapeHtml(text) {
+        function replaceHtmlChars(text) {
           const map = {
             '&': '&amp;',
             '<': '&lt;',

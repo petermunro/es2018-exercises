@@ -18,13 +18,13 @@
           10,Geno,Ludovico,gludovico9@geocitie.jp,773-42-6110,153.251.244.141`;
           return new Promise((resolve, reject) => {
             if (emulateError) {
-              setTimeout(() => reject("Error: fetchCsv failed to retrieve data"), 500);
+              setTimeout(() => reject("Error: fetchCsv failed to retrieve data"), 1000);
             }
-            setTimeout(() => resolve(data), 500);
+            setTimeout(() => resolve(data), 1000);
           });
         }
 
-  Note that this function returns a promise. Call this function, and use `.then(...)` to
+    Note that this function returns a promise. Call this function, and use `.then(...)` to
   `console.log()` the CSV data retrieved.
 
 2. This data is difficult to work with! To use it in JavaScript, we need it converted to
@@ -45,7 +45,7 @@
 
 3. Unfortunately, some of the entries are missing their vital email address, so we need to
    exclude them from the results. Modify your calling code by adding another `.then(...)`
-   to `filter` the results to include only those with an email address.
+   whose callback will `filter` the results to include only those with an email address.
 
 ### Catching Errors
 

@@ -1,24 +1,26 @@
 # Strings and Template String Literals
 
-1. Write a template tag function that escapes HTML.
-   For example, if you call it like this, it should convert a string:
+1.  Write a template tag function that escapes HTML.
+    For example, if you call it like this, it should convert a string:
 
-        escapeHTML `<script>alert('hello');</script>`
+         let name = "tag function";
 
-   to:
+         escapeHTML `<script>alert('hello ${name}!');</script>`
 
-        "&lt;script&gt;alert(&#039;hello&#039;);&lt;/script&gt;"
+    resulting in:
 
-   You can use this function to help out:
+         "&lt;script&gt;alert(&#039;hello tag function!&#039;);&lt;/script&gt;"
 
-        function replaceHtmlChars(text) {
-          const map = {
-            '&': '&amp;',
-            '<': '&lt;',
-            '>': '&gt;',
-            '"': '&quot;',
-            "'": '&#039;'
-          };
+    You can use this function to help out:
 
-          return text.replace(/[&<>"']/g, function(m) { return map[m]; });
-        }
+         function replaceHtmlChars(text) {
+           const map = {
+             '&': '&amp;',
+             '<': '&lt;',
+             '>': '&gt;',
+             '"': '&quot;',
+             "'": '&#039;'
+           };
+
+           return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+         }
